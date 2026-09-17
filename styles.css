@@ -429,3 +429,80 @@ footer {
     text-align: center;
   }
 }
+
+.future-badge {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+
+  width: 220px;
+  padding: 14px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  border: 3px solid var(--orange);
+  border-radius: 10px;
+  background: var(--black);
+  background:linear-gradient(135deg, rgba(8, 18, 40, 0.98), rgba(37, 2, 2, 0.92));
+  color: var(--white);
+  font-style: italic;
+  line-height: 1.1;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+}
+
+.future-badge span:first-child {
+  align-self: flex-start;
+}
+
+.future-badge strong {
+  align-self: center;
+  color: var(--orange);
+  font-size: 2.0rem;
+  font-weight: 800;
+}
+
+.future-badge span:last-child {
+  align-self: flex-end;
+}
+
+@media (max-width: 700px) {
+  .future-badge {
+    right: 14px;
+    bottom: 14px;
+    width: 170px;
+    padding: 10px 14px;
+  }
+
+  .future-badge strong {
+    font-size: 1.2rem;
+  }
+}
+
+.future-badge span,
+.future-badge strong {
+  animation: badgeText 2s ease-in-out infinite;
+}
+
+.future-badge strong {
+  animation-delay: 0.3s;
+}
+
+.future-badge span:last-child {
+  animation-delay: 0.6s;
+}
+
+@keyframes badgeText {
+  0%,
+  100% {
+    opacity: 0.65;
+    transform: translateX(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateX(5px);
+  }
+}
