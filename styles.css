@@ -430,6 +430,7 @@ footer {
   }
 }
 
+
 .future-badge {
   position: fixed;
   right: 24px;
@@ -444,12 +445,14 @@ footer {
 
   border: 3px solid var(--orange);
   border-radius: 10px;
-  background: var(--black);
-  background:linear-gradient(135deg, rgba(8, 18, 40, 0.98), rgba(37, 2, 2, 0.92));
+  background: linear-gradient(
+    135deg,
+    rgba(8, 18, 40, 0.98),
+    rgba(37, 2, 2, 0.92)
+  );
   color: var(--white);
   font-style: italic;
   line-height: 1.1;
-  /* text-transform: uppercase; */
   letter-spacing: 2px;
 }
 
@@ -460,25 +463,12 @@ footer {
 .future-badge strong {
   align-self: center;
   color: var(--orange);
-  font-size: 2.0rem;
+  font-size: 2rem;
   font-weight: 800;
 }
 
 .future-badge span:last-child {
   align-self: flex-end;
-}
-
-@media (max-width: 700px) {
-  .future-badge {
-    right: 14px;
-    bottom: 14px;
-    width: 170px;
-    padding: 10px 14px;
-  }
-
-  .future-badge strong {
-    font-size: 1.2rem;
-  }
 }
 
 .future-badge span,
@@ -504,5 +494,18 @@ footer {
   50% {
     opacity: 1;
     transform: translateX(5px);
+  }
+}
+
+@media (max-width: 700px) {
+  .future-badge {
+    right: 14px;
+    bottom: 14px;
+    width: 170px;
+    padding: 10px 14px;
+  }
+
+  .future-badge strong {
+    font-size: 1.2rem;
   }
 }
