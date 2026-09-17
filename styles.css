@@ -431,83 +431,45 @@ footer {
 }
 
 
-.future-badge {
-  position: fixed;
-  right: 24px;
-  bottom: 0px;
-  z-index: 1000;
+.teaching-banner {
+  position: sticky;
+  top: 70px;
+  z-index: 9;
 
-  width: 220px;
-  padding: 14px 20px;
+  min-height: 38px;
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
 
-  border-width: 3px 3px 0 3px ;
-  border-style: solid;
-  border-color: var(--orange);
-  border-radius: 10px 10px 0 0 ;
+  background: var(--orange);
   background: linear-gradient(
-    135deg,
-    rgba(8, 18, 40, 0.98),
-    rgba(37, 2, 2, 0.92)
+    90deg,
+    var(--black),
+    var(--orange),
+    var(--black)
   );
-  color: var(--white);
+  color: var(--black);
+  font-size: 1rem;
   font-style: italic;
-  line-height: 1.1;
-  letter-spacing: 2px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
-.future-badge span:first-child {
-  align-self: flex-start;
+#typing-text {
+  color: var(--black);
 }
 
-.future-badge strong {
-  align-self: center;
-  color: var(--orange);
-  font-size: 2rem;
+.typing-cursor {
+  margin-left: 3px;
+  color: var(--black);
   font-weight: 800;
+  animation: blinkCursor 0.7s infinite;
 }
 
-.future-badge span:last-child {
-  align-self: flex-end;
-}
-
-.future-badge span,
-.future-badge strong {
-  animation: badgeText 2s ease-in-out infinite;
-}
-
-.future-badge strong {
-  animation-delay: 0.3s;
-}
-
-.future-badge span:last-child {
-  animation-delay: 0.6s;
-}
-
-@keyframes badgeText {
-  0%,
-  100% {
-    opacity: 0.65;
-    transform: translateX(0);
-  }
-
+@keyframes blinkCursor {
   50% {
-    opacity: 1;
-    transform: translateX(5px);
-  }
-}
-
-@media (max-width: 700px) {
-  .future-badge {
-    right: 14px;
-    bottom: 14px;
-    width: 170px;
-    padding: 10px 14px;
-  }
-
-  .future-badge strong {
-    font-size: 1.2rem;
+    opacity: 0;
   }
 }
