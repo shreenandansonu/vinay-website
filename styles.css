@@ -306,7 +306,7 @@ section {
 
 /* Footer */
 footer {
-  padding: 50px 0 20px;
+  padding: 50px 0 50px;
   background: var(--black);
   color: var(--white);
 }
@@ -432,24 +432,25 @@ footer {
 
 
 .teaching-banner {
-  position: sticky;
-  top: 70px;
-  z-index: 9;
-
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  border-top: 2px solid var(--black);
   min-height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 8px 15px;
 
-  background: var(--orange);
   background: linear-gradient(
     90deg,
-    var(--black),
+    #911d03,
     var(--orange),
-    var(--black)
+    #911d03
   );
-  color: var(--black);
+  color: var(--white);
   font-size: 1rem;
   font-style: italic;
   font-weight: 700;
@@ -458,18 +459,32 @@ footer {
 }
 
 #typing-text {
-  color: var(--black);
+  color: var(--white);
 }
 
-.typing-cursor {
-  margin-left: 3px;
-  color: var(--black);
-  font-weight: 800;
-  animation: blinkCursor 0.7s infinite;
+.teaching-banner {
+  background: linear-gradient(
+    90deg,
+    #911d03,
+    var(--orange),
+    #911d03,
+    var(--orange),
+    #911d03
+  );
+  background-size: 300% 100%;
+  animation: bannerGradient 20s ease-in-out infinite;
 }
 
-@keyframes blinkCursor {
+@keyframes bannerGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
   50% {
-    opacity: 0;
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }
