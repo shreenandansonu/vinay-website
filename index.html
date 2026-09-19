@@ -3,193 +3,425 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vinay Yadav </title>
+  <title>Vinay Yadav — JEE Mathematics Faculty</title>
+  <meta name="description" content="JEE Mathematics faculty teaching concepts, not shortcuts. Clear doubts, build logic and score big in JEE Mains & Advanced.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-  <link rel="icon" type="image/png" href="images/icon.png">
-
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <script>
+    (function () {
+      var t = localStorage.getItem("theme") || "light";
+      if (t === "dark") document.documentElement.classList.add("dark");
+    })();
+  </script>
 </head>
 <body>
 
-<header>
-  <nav class="container">
-    <a class="logo" href="#home">VINAY YADAV</a>
+<header class="site-header" id="top">
+  <nav class="container nav">
+    <a class="logo" href="#top">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 7V5a1 1 0 0 0-1-1H6.5a.5.5 0 0 0-.4.8l4.5 6a2 2 0 0 1 0 2.4l-4.5 6a.5.5 0 0 0 .4.8H17a1 1 0 0 0 1-1v-2"></path></svg>
+      </span>
+      <span class="logo-text">Vinay Yadav</span>
+    </a>
 
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#top">Home</a></li>
+      <li><a href="#about">Teaching</a></li>
+      <li><a href="#subjects">Syllabus</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>
+        </svg>
+      </button>
+
+      <a class="nav-cta" href="cv/Vinay_Yadav_CV.pdf" download>Resume&nbsp;&darr;</a>
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
     </button>
-
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#videos">Demo Videos</a></li>
-      <li><a href="#footer">Contact</a></li>
-    </ul>
   </nav>
 </header>
 
-<div class="teaching-banner" aria-label="Teaching India's future">
-  <span id="typing-text"></span><span class="typing-cursor">|</span>
-</div>
-
 <main>
+
+  <!-- ================= HERO ================= -->
   <section class="hero" id="home">
-    <div class="container hero-content">
-      <div class="photo-holder">
-        <img src="images/vinay-yadav.jpg" alt="Vinay Yadav"
-          onerror="this.style.display='none'; this.parentElement.innerHTML='<span>Your Photo Here</span>'">
-      </div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-grid">
 
-      <div class="hero-text">
-        <h1>Hii, I'm <span>Vinay Yadav</span></h1>
-        <h2>Mathematics Faculty</h2>
-        <p>
-          With 2+ years of experience in teaching Mathematics, I have mentored
-          students who are now studying at prestigious IITs and NITs.
+      <div class="hero-text reveal">
+        <p class="eyebrow">
+          <span class="dot"></span>
+          JEE Mathematics Faculty
         </p>
+        <h1>Mathematics,<br>made <span class="grad-text">logical.</span></h1>
+        <p class="hero-sub">Hi, I'm <strong>Vinay Yadav</strong> — I teach JEE Maths the way it's meant to be taught: concepts first, logic over memorisation, and every doubt answered.</p>
 
-        <div class="badges">
-          <span>2+ Years Experience</span>
-          <span>IIT/NIT Selections</span>
-          <span>Concept Building</span>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">
+            Book a Free Demo Class
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>
+          </a>
+          <a class="btn btn-ghost" href="#about">How I Teach</a>
         </div>
       </div>
+
+      <div class="hero-photo reveal">
+        <div class="photo-frame">
+          <img src="images/vinay-yadav.jpg" alt="Portrait of Vinay Yadav" onerror="photoFallback(this)">
+        </div>
+
+        <div class="float-chip chip-top">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v2M12 19v2M5 5l1.5 1.5M17.5 17.5 19 19M3 12h2M19 12h2M5 19l1.5-1.5M17.5 6.5 19 5"></path><circle cx="12" cy="12" r="4"></circle></svg>
+          <div>
+            <b>2+ Years</b>
+            <span>Teaching experience</span>
+          </div>
+        </div>
+
+        <div class="float-chip chip-bottom">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+          <div>
+            <b>10+ Students</b>
+            <span>in IITs &amp; NITs</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section class="testimonials" id="testimonials">
+  <!-- ================= STATS ================= -->
+  <section class="stats-band">
+    <div class="container stats-grid">
+      <div class="stat reveal">
+        <span class="stat-num"><span data-count="2">0</span>+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-num"><span data-count="4">0</span></span>
+        <span class="stat-label">NIT Selections</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-num"><span data-count="3">0</span></span>
+        <span class="stat-label">IIT Selections</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TEACHING APPROACH ================= -->
+  <section class="section about" id="about">
     <div class="container">
-      <h2 class="section-title">What My Students Say</h2>
+      <div class="section-head reveal">
+        <p class="section-kicker">My Philosophy</p>
+        <h2 class="section-title">Maths isn't about memorising —<br>it's about logic that stays.</h2>
+        <p class="section-sub">Most students don't fail JEE maths because they can't do it. They fail because it was taught to them as formulas. I teach it as reasoning, and the results follow.</p>
+      </div>
 
-      <div class="testimonial-grid">
-        <article class="t-card">
-          <img src="images/student1.jpg" alt="Ankit Sharma">
-          <h3>M Mythreyan</h3>
-          <div class="institute">NIT Tiruchirappalli</div>
-          <div class="rank">AIR 5080 — JEE Mains</div>
-          <p>"You guided me like someone who had been through the same exam, helping me avoid mistakes and providing genuine emotional support beyond the usual motivation and scolding. Your guidance became a major source of my confidence and helped me overcome my all-or-nothing approach. I would definitely recommend learning under you."</p>
+      <div class="approach-grid">
+        <article class="approach-card reveal">
+          <span class="approach-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </span>
+          <h3>Concepts, not cramming</h3>
+          <p>Every topic is built from first principles so each formula feels obvious — never a black box to memorise and forget.</p>
         </article>
 
-        <article class="t-card">
-          <img src="images/student2.jpg" alt="Priya Verma">
-          <h3>Priya Verma</h3>
-          <div class="institute">NIT Trichy</div>
-          <div class="rank">AIR 1780 — JEE Mains</div>
-          <p>"His concept clarity helped me crack JEE with confidence."</p>
+        <article class="approach-card reveal">
+          <span class="approach-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-2 8h6L9 22l2-8H5l8-12Z"></path></svg>
+          </span>
+          <h3>Exam-smart methods</h3>
+          <p>Short cuts that are actually correct, alternatives for exceptions, and time-management strategy tuned to JEE Mains &amp; Advanced.</p>
         </article>
 
-        <article class="t-card">
-          <img src="images/student3.jpg" alt="Rohit Singh">
-          <h3>Rohit Singh</h3>
-          <div class="institute">IIT Delhi</div>
-          <div class="rank">AIR 890 — JEE Advanced</div>
-          <p>"His problem-solving tricks are a complete game changer."</p>
+        <article class="approach-card reveal">
+          <span class="approach-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"></path></svg>
+          </span>
+          <h3>Every doubt, answered</h3>
+          <p>Doubts welcomed on the spot and after class — until the idea actually clicks. No question is ever "too basic".</p>
+        </article>
+
+        <article class="approach-card reveal">
+          <span class="approach-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </span>
+          <h3>Mentor till the end</h3>
+          <p>Study planning, rechecking habits and motivation through the final months — the difference between a rank and a dream.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="skills">
+  <!-- ================= SUBJECTS ================= -->
+  <section class="section subjects" id="subjects">
     <div class="container">
-      <h2 class="section-title">Skills &amp; Topics Covered</h2>
+      <div class="section-head reveal">
+        <p class="section-kicker">What I Teach</p>
+        <h2 class="section-title">The full JEE Maths syllabus</h2>
+        <p class="section-sub">Every chapter of Mains &amp; Advanced — taught with logic-first reasoning and exam-ready technique.</p>
+      </div>
 
-      <div class="skills-grid">
-        <article class="skill-card">
+      <div class="subjects-grid">
+        <article class="subject-card reveal">
+          <span class="subject-index">01</span>
           <h3>Algebra</h3>
-          <p>Quadratic Equations, Sequences, Series and Complex Numbers</p>
+          <p>Quadratics, complex numbers, sequences &amp; series, logarithms and more.</p>
+          <div class="subject-chips"><span>Quadratics</span><span>Complex</span><span>AP/GP</span></div>
         </article>
 
-        <article class="skill-card">
+        <article class="subject-card reveal">
+          <span class="subject-index">02</span>
           <h3>Calculus</h3>
-          <p>Limits, Continuity, Differentiation and Integration</p>
+          <p>Limits, continuity, differentiation, integration and their applications.</p>
+          <div class="subject-chips"><span>Limits</span><span>Derivatives</span><span>Integration</span></div>
         </article>
 
-        <article class="skill-card">
+        <article class="subject-card reveal">
+          <span class="subject-index">03</span>
           <h3>Coordinate Geometry</h3>
-          <p>Straight Lines, Circles and Conic Sections</p>
+          <p>Straight lines, circles and conic sections — visualised, not memorised.</p>
+          <div class="subject-chips"><span>Lines</span><span>Circles</span><span>Conics</span></div>
         </article>
 
-        <article class="skill-card">
+        <article class="subject-card reveal">
+          <span class="subject-index">04</span>
           <h3>Trigonometry</h3>
-          <p>Identities, Equations and Inverse Trigonometry</p>
+          <p>Identities, equations and inverse trigonometry with clean logic.</p>
+          <div class="subject-chips"><span>Identities</span><span>Equations</span><span>Inverse</span></div>
         </article>
 
-        <article class="skill-card">
-          <h3>Vectors &amp; 3D Geometry</h3>
-          <p>Vector Algebra, 3D Planes and Lines</p>
+        <article class="subject-card reveal">
+          <span class="subject-index">05</span>
+          <h3>Vectors &amp; 3D</h3>
+          <p>Vector algebra, straight lines and planes in three dimensions.</p>
+          <div class="subject-chips"><span>Vectors</span><span>Lines</span><span>Planes</span></div>
         </article>
 
-        <article class="skill-card">
-          <h3>Probability &amp; Statistics</h3>
-          <p>Permutations, Combinations and Probability Theory</p>
+        <article class="subject-card reveal">
+          <span class="subject-index">06</span>
+          <h3>Permutations, Probability &amp; Stats</h3>
+          <p>Combinatorics and probability built from clean, countable logic.</p>
+          <div class="subject-chips"><span>P&amp;C</span><span>Probability</span><span>Stats</span></div>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="videos" id="videos">
+  <!-- ================= RESULTS / TESTIMONIALS ================= -->
+  <section class="section results" id="results">
     <div class="container">
-      <h2 class="section-title">Demo Videos</h2>
+      <div class="section-head reveal">
+        <p class="section-kicker">Real Results</p>
+        <h2 class="section-title">What my students say</h2>
+        <p class="section-sub">Two students, two journeys — and the honest words of what the classes felt like.</p>
+      </div>
 
-      <div class="video-grid">
-        <article class="video-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Introduction to Calculus" allowfullscreen></iframe>
-          </div>
-          <h3>Introduction to Calculus</h3>
-        </article>
+      <div class="testimonial-list">
+        <button type="button" class="tt-card reveal" data-testimonial="aryaman">
+          <span class="tt-avatar">
+            <img src="images/Aryaman.png" alt="Aryaman" loading="lazy" onerror="avatarFallback(this, 'A')">
+          </span>
+          <span class="tt-body">
+            <span class="tt-name">Aryaman</span>
+            <span class="tt-institute">IIT Roorkee &middot; Material Sciences</span>
+            <span class="tt-meta">Class of 2026 &middot; JEE Mains 99.4 %ile</span>
+          </span>
+          <span class="tt-quote">"I would definitely recommend learning under you."</span>
+          <span class="tt-chev" aria-hidden="true">&#8594;</span>
+        </button>
 
-        <article class="video-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Coordinate Geometry Basics" allowfullscreen></iframe>
-          </div>
-          <h3>Coordinate Geometry Basics</h3>
-        </article>
-
-        <article class="video-card">
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Trigonometry Tricks" allowfullscreen></iframe>
-          </div>
-          <h3>Trigonometry Tricks</h3>
-        </article>
+        <button type="button" class="tt-card reveal" data-testimonial="mythreyan">
+          <span class="tt-avatar">
+            <img src="images/mythreyan.jpg" alt="M Mythreyan" loading="lazy" onerror="avatarFallback(this, 'M')">
+          </span>
+          <span class="tt-body">
+            <span class="tt-name">M Mythreyan</span>
+            <span class="tt-institute">NIT Tiruchirappalli &middot; EEE</span>
+            <span class="tt-meta">JEE Mains ~5080</span>
+          </span>
+          <span class="tt-quote">"Your guidance became my main source of confidence."</span>
+          <span class="tt-chev" aria-hidden="true">&#8594;</span>
+        </button>
       </div>
     </div>
   </section>
-</main>
 
-<footer id="footer">
-  <div class="container footer-content">
-    <div>
-      <h3>Contact Details</h3>
-      <a href="tel:+91 82996 39445">📞 +91 82996 39445</a>
-      <a href="mailto:me.vinayyadav2002@gmail.com">✉️ me.vinayyadav2002@gmail.com</a>
-      <p>📍 Hydrabad, India</p>
-    </div>
+  <!-- ================= TESTIMONIAL MODAL ================= -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
 
-    <div>
-      <h3>Follow Me</h3>
-      <a href="#">Instagram</a>
-      <a href="#">YouTube</a>
-      <a href="#">Facebook</a>
-    </div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+      <button type="button" class="modal-close" data-close aria-label="Close">
+        &times;
+      </button>
 
-    <div>
-      <h3>Download My CV</h3>
-      <p>Learn more about my qualifications and experience.</p>
-      <a class="cv-btn" href="cv/Vinay_Yadav_CV.pdf" download>
-        Download CV
-      </a>
+      <div class="modal-header">
+        <span class="modal-avatar">
+          <img id="modal-img" src="" alt="">
+        </span>
+        <div class="modal-head-meta">
+          <h3 id="modal-name"></h3>
+          <p class="institute" id="modal-institute"></p>
+          <ul class="cred-line" id="modal-cred"></ul>
+        </div>
+      </div>
+
+      <p class="modal-quote" id="modal-quote"></p>
+      <blockquote class="modal-advice" id="modal-advice" hidden>
+        <strong>Advice for juniors:</strong> <span id="modal-advice-text"></span>
+      </blockquote>
     </div>
   </div>
 
+  <!-- ================= VIDEOS ================= -->
+  <section class="section videos" id="videos">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-kicker">Learn by Watching</p>
+        <h2 class="section-title">Demo lectures</h2>
+        <p class="section-sub">A taste of how a class runs — clear, visual and conceptual. Full solutions land on YouTube soon.</p>
+      </div>
+
+      <div class="video-grid">
+        <article class="video-card reveal">
+          <a class="video-thumb" href="#contact" style="--th:0deg">
+            <span class="video-play" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 5v14l11-7Z"></path></svg>
+            </span>
+            <span class="video-note">Calculus</span>
+          </a>
+          <div class="video-meta">
+            <span class="video-tag">Concept</span>
+            <h3>Introduction to Calculus</h3>
+          </div>
+        </article>
+
+        <article class="video-card reveal">
+          <a class="video-thumb" href="#contact" style="--th:120deg">
+            <span class="video-play" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 5v14l11-7Z"></path></svg>
+            </span>
+            <span class="video-note">Coordinate Geometry</span>
+          </a>
+          <div class="video-meta">
+            <span class="video-tag">Beginner</span>
+            <h3>Coordinate Geometry Basics</h3>
+          </div>
+        </article>
+
+        <article class="video-card reveal">
+          <a class="video-thumb" href="#contact" style="--th:240deg">
+            <span class="video-play" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 5v14l11-7Z"></path></svg>
+            </span>
+            <span class="video-note">Trigonometry</span>
+          </a>
+          <div class="video-meta">
+            <span class="video-tag">Tricks</span>
+            <h3>Trigonometry Shortcuts</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="section cta" id="contact">
+    <div class="container">
+      <div class="cta-card reveal">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <p class="cta-kicker">Ready to start?</p>
+        <h2 class="cta-title">Let's make JEE Maths your<br>highest-scoring subject.</h2>
+        <p class="cta-sub">Book a free demo class, ask any question about your preparation, or just say hi. I reply to every message.</p>
+
+        <div class="cta-actions">
+          <a class="btn btn-white btn-whatsapp" href="https://wa.me/918299639445?text=I%20want%20to%20learn%20from%20you" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.33 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14 0-.31-.01-.48-.01-.16 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"></path></svg>
+            Chat on WhatsApp &mdash; "I want to learn from you"
+          </a>
+          <a class="btn btn-white" href="tel:+918299639445">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"></path></svg>
+            +91 82996 39445
+          </a>
+          <a class="btn btn-white btn-email" href="mailto:me.vinayyadav2002@gmail.com">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg>
+            me.vinayyadav2002@gmail.com
+          </a>
+        </div>
+
+        <p class="cta-note">Based in Hyderabad &middot; Online &amp; offline classes available</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container footer-grid">
+
+    <div class="footer-block">
+      <a class="logo logo-footer" href="#top">
+        <span class="logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 7V5a1 1 0 0 0-1-1H6.5a.5.5 0 0 0-.4.8l4.5 6a2 2 0 0 1 0 2.4l-4.5 6a.5.5 0 0 0 .4.8H17a1 1 0 0 0 1-1v-2"></path></svg>
+        </span>
+        <span class="logo-text">Vinay Yadav</span>
+      </a>
+      <p class="footer-blurb">
+        Mathematics faculty helping JEE aspirants build real concepts, avoid silly mistakes and reach IIT &amp; NIT.
+      </p>
+    </div>
+
+    <div class="footer-block">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+        <li><a href="#about">Teaching approach</a></li>
+        <li><a href="#subjects">Syllabus</a></li>
+        <li><a href="#results">Student results</a></li>
+        <li><a href="#videos">Demo videos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-block">
+      <h3>Contact</h3>
+      <ul class="footer-links">
+        <li><a href="tel:+918299639445">+91 82996 39445</a></li>
+        <li><a href="mailto:me.vinayyadav2002@gmail.com">me.vinayyadav2002@gmail.com</a></li>
+        <li>Hyderabad, India</li>
+      </ul>
+    </div>
+
+    <div class="footer-block">
+      <h3>Curriculum Vitae</h3>
+      <p class="footer-blurb">My qualifications, experience and teaching journey.</p>
+      <a class="btn btn-primary btn-download" href="cv/Vinay_Yadav_CV.pdf" download>Download CV</a>
+    </div>
+
+  </div>
+
   <div class="footer-bottom">
-    &copy; 2026 Vinay Yadav. All Rights Reserved.
+    <div class="container">
+      &copy; 2026 Vinay Yadav. All rights reserved.
+    </div>
   </div>
 </footer>
 
