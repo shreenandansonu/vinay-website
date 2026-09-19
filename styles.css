@@ -1153,6 +1153,17 @@ html.dark .hero-glow {
   display: none;
 }
 
+.demo-video:fullscreen,
+.demo-video:-webkit-full-screen {
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  aspect-ratio: auto;
+  border-radius: 0;
+  border: 0;
+  background: #000;
+}
+
 /* ---------------- FAQ ---------------- */
 .faq {
   background: var(--bg);
@@ -1590,6 +1601,19 @@ footer {
 
   .float-chip b {
     font-size: 0.86rem;
+  }
+
+  .demo-video {
+    border-radius: 14px;
+  }
+
+  .video-play-btn {
+    width: 54px;
+    height: 54px;
+  }
+
+  .video-cover-label {
+    display: none;
   }
 
   .stats-grid {

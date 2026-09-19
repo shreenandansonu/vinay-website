@@ -19,14 +19,29 @@ themeToggle.addEventListener("click", () => {
   setTheme(isDark ? "light" : "dark");
 });
 
-/* ---------- Demo video cover → load on click ---------- */
+/* ---------- Demo video cover → fullscreen on play ---------- */
 const videoCover = document.getElementById("video-cover");
 
 if (videoCover) {
   videoCover.addEventListener("click", () => {
-    const frame = videoCover.parentElement.querySelector(".video-frame");
+    const container = videoCover.parentElement;
+    const frame = container.querySelector(".video-frame");
     frame.src = frame.dataset.src;
     videoCover.classList.add("hidden");
+
+    const requestFS =
+      container.requestFullscreen ||
+      container.webkitRequestFullscreen ||
+      container.msRequestFullscreen;
+    if (requestFS) {
+      try {
+        requestFS.call(container);
+      } catch (err) {}
+    }
+
+    if (screen.orientation && screen.orientation.lock) {
+      screen.orientation.lock("landscape").catch(() => {});
+    }
   });
 }
 
@@ -77,11 +92,11 @@ const testimonials = {
   },
   mythreyan: {
     name: "M Mythreyan",
-    institute: "NIT Tiruchirappalli · Electrical & Electronics Engineering",
-    cred: ["JEE Mains ~5080"],
+    institute: "NIT Tiruchirappalli · Electrical & Electronics Engineering (B.Tech)",
+    cred: ["JEE Mains (5080)"],
     photo: "images/mythreyan.jpg",
     quote:
-      "You guided me like someone who had been through the same exam, helping me avoid the mistakes you knew I would make, and supporting me emotionally as someone who understood what students feel — not the usual motivation and scolding. So many of your advices stuck with me. Your guidance became my main source of confidence and helped me get over an all-or-nothing approach. I would definitely recommend learning under you.",
+      "Sir guided me like someone who had been through the same exam — a mentor who knew the mistakes I would make even before I made them. Instead of the usual motivation and scolding from faculty, he gave me emotional support as a person who genuinely understood what students feel. So many of his advices stuck with me that I can't pinpoint a single one. His guidance became my main source of confidence and helped me get over my all-or-nothing approach. I would definitely recommend learning under him.",
     advice: ""
   }
 };
