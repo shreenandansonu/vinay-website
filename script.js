@@ -19,6 +19,17 @@ themeToggle.addEventListener("click", () => {
   setTheme(isDark ? "light" : "dark");
 });
 
+/* ---------- Demo video cover → load on click ---------- */
+const videoCover = document.getElementById("video-cover");
+
+if (videoCover) {
+  videoCover.addEventListener("click", () => {
+    const frame = videoCover.parentElement.querySelector(".video-frame");
+    frame.src = frame.dataset.src;
+    videoCover.classList.add("hidden");
+  });
+}
+
 /* ---------- Contact form → WhatsApp ---------- */
 function sendWhatsApp(form) {
   const name = form.querySelector('[name="name"]').value.trim();

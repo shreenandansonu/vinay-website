@@ -1073,11 +1073,84 @@ html.dark .hero-glow {
   box-shadow: var(--shadow-md);
 }
 
-.demo-video iframe {
+.video-frame {
   width: 100%;
   height: 100%;
   border: 0;
   display: block;
+}
+
+.video-frame-cover {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 14px;
+  background: #0e1328;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.video-frame-cover img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  filter: saturate(0.7);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.video-frame-cover:hover img {
+  transform: scale(1.05);
+  opacity: 0.62;
+}
+
+.video-cover-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgb(13 17 32 / 20%), rgb(13 17 32 / 78%));
+}
+
+.video-play-btn {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 0;
+  background: var(--grad);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 14px 34px rgb(0 0 0 / 40%);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.video-play-btn svg {
+  margin-left: 3px;
+}
+
+.video-frame-cover:hover .video-play-btn,
+.video-play-btn:focus-visible {
+  transform: scale(1.1);
+  box-shadow: 0 20px 42px rgb(0 0 0 / 50%);
+}
+
+.video-cover-label {
+  position: relative;
+  color: rgb(255 255 255 / 90%);
+  font-family: var(--font-head);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.video-frame-cover.hidden {
+  display: none;
 }
 
 /* ---------------- FAQ ---------------- */
