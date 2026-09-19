@@ -452,6 +452,22 @@ html.dark .hero-glow {
   margin-top: 32px;
 }
 
+.hero-loc {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 22px;
+  max-width: 52ch;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.hero-loc svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--primary);
+}
+
 /* ---------------- Hero photo ---------------- */
 .hero-photo {
   position: relative;
