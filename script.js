@@ -19,6 +19,21 @@ themeToggle.addEventListener("click", () => {
   setTheme(isDark ? "light" : "dark");
 });
 
+/* ---------- Contact form → WhatsApp ---------- */
+function sendWhatsApp(form) {
+  const name = form.querySelector('[name="name"]').value.trim();
+  const cls = form.querySelector('[name="class"]').value;
+  const msg = form.querySelector('[name="msg"]').value.trim();
+
+  let text = "Hi Vinay, I want to learn JEE Mathematics from you.\n\n";
+  text += "Name: " + name + "\n";
+  text += "Class: " + cls + "\n";
+  if (msg) text += "Message: " + msg + "\n";
+
+  window.open("https://wa.me/918299639445?text=" + encodeURIComponent(text), "_blank", "noopener");
+  return false;
+}
+
 /* ---------- Hero photo fallback ---------- */
 function photoFallback(img) {
   img.style.display = "none";

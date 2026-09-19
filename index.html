@@ -80,6 +80,63 @@
   }
   </script>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you take online or offline classes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both. I teach live online classes to students anywhere in India, and offline classes are available in Hyderabad for JEE Mathematics."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which classes and exams do you prepare students for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I teach Mathematics for JEE Mains and JEE Advanced — for Class 11, Class 12 and droppers — while also covering school board maths alongside JEE preparation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is your teaching style?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Concepts first. Every formula is derived or explained from logic so it sticks, then we apply it with quick, exam-smart methods. Doubts are answered until the idea truly clicks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work with coaching institutes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. I am open to partnerships with coaching institutes in Hyderabad and across India that need a Mathematics faculty for JEE batches."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a free demo class?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, the first class is a free demo so you can experience the teaching style before you join."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get started?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Message me on WhatsApp, call me or email me using the buttons on this page. Tell me your class and goal, and I will book your free demo class."
+        }
+      }
+    ]
+  }
+  </script>
+
   <script>
     (function () {
       var t = localStorage.getItem("theme") || "dark";
@@ -101,9 +158,10 @@
     <ul class="nav-links" id="nav-links">
       <li><a href="#top">Home</a></li>
       <li><a href="#about">Teaching</a></li>
+      <li><a href="#demo">Demo</a></li>
       <li><a href="#subjects">Syllabus</a></li>
       <li><a href="#results">Results</a></li>
-      <li><a href="#videos">Videos</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
 
@@ -191,12 +249,12 @@
         <span class="stat-label">Years Experience</span>
       </div>
       <div class="stat reveal">
-        <span class="stat-num"><span data-count="4">0</span></span>
-        <span class="stat-label">NIT Selections</span>
+        <span class="stat-num"><span data-count="10">0</span>+</span>
+        <span class="stat-label">Students in IITs &amp; NITs</span>
       </div>
       <div class="stat reveal">
-        <span class="stat-num"><span data-count="3">0</span></span>
-        <span class="stat-label">IIT Selections</span>
+        <span class="stat-num"><span data-count="99.4">0</span></span>
+        <span class="stat-label">Best JEE Mains %ile</span>
       </div>
     </div>
   </section>
@@ -242,6 +300,22 @@
           <h3>Mentor till the end</h3>
           <p>Study planning, rechecking habits and motivation through the final months — the difference between a rank and a dream.</p>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DEMO CLASS ================= -->
+  <section class="section demo" id="demo">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-kicker">Watch a Real Class</p>
+        <h2 class="section-title">Sample of my teaching</h2>
+        <p class="section-sub">This is how a class runs — clear, visual and conceptual. Try your own free demo after watching.</p>
+      </div>
+
+      <div class="demo-video reveal">
+        <iframe src="https://drive.google.com/file/d/1iV9gJxUS0z3Z4XnyQLjZR8cGtLC-fWG0/preview"
+          title="Demo class — JEE Mathematics" loading="lazy" allowfullscreen></iframe>
       </div>
     </div>
   </section>
@@ -367,54 +441,45 @@
     </div>
   </div>
 
-  <!-- ================= VIDEOS ================= -->
-  <section class="section videos" id="videos">
+  <!-- ================= FAQ ================= -->
+  <section class="section faq" id="faq">
     <div class="container">
       <div class="section-head reveal">
-        <p class="section-kicker">Learn by Watching</p>
-        <h2 class="section-title">Demo lectures</h2>
-        <p class="section-sub">A taste of how a class runs — clear, visual and conceptual. Full solutions land on YouTube soon.</p>
+        <p class="section-kicker">Common Questions</p>
+        <h2 class="section-title">Everything people usually ask</h2>
+        <p class="section-sub">Short, honest answers — contact me if you want to know anything else.</p>
       </div>
 
-      <div class="video-grid">
-        <article class="video-card reveal">
-          <a class="video-thumb" href="#contact" style="--th:0deg">
-            <span class="video-play" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 5v14l11-7Z"></path></svg>
-            </span>
-            <span class="video-note">Calculus</span>
-          </a>
-          <div class="video-meta">
-            <span class="video-tag">Concept</span>
-            <h3>Introduction to Calculus</h3>
-          </div>
-        </article>
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>Do you take online or offline classes?</summary>
+          <p>Both. I teach live online classes to students anywhere in India, and offline classes are available in Hyderabad for JEE Mathematics.</p>
+        </details>
 
-        <article class="video-card reveal">
-          <a class="video-thumb" href="#contact" style="--th:120deg">
-            <span class="video-play" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 5v14l11-7Z"></path></svg>
-            </span>
-            <span class="video-note">Coordinate Geometry</span>
-          </a>
-          <div class="video-meta">
-            <span class="video-tag">Beginner</span>
-            <h3>Coordinate Geometry Basics</h3>
-          </div>
-        </article>
+        <details class="faq-item reveal">
+          <summary>Which classes and exams do you prepare students for?</summary>
+          <p>I teach Mathematics for JEE Mains and JEE Advanced — for Class 11, Class 12 and droppers — while also covering school board maths alongside JEE preparation.</p>
+        </details>
 
-        <article class="video-card reveal">
-          <a class="video-thumb" href="#contact" style="--th:240deg">
-            <span class="video-play" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M8 5v14l11-7Z"></path></svg>
-            </span>
-            <span class="video-note">Trigonometry</span>
-          </a>
-          <div class="video-meta">
-            <span class="video-tag">Tricks</span>
-            <h3>Trigonometry Shortcuts</h3>
-          </div>
-        </article>
+        <details class="faq-item reveal">
+          <summary>What is your teaching style?</summary>
+          <p>Concepts first. Every formula is derived or explained from logic so it sticks, then we apply it with quick, exam-smart methods. Doubts are answered until the idea truly clicks.</p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>Do you work with coaching institutes?</summary>
+          <p>Yes. I am open to partnerships with coaching institutes in Hyderabad and across India that need a Mathematics faculty for JEE batches.</p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>Is there a free demo class?</summary>
+          <p>Yes, the first class is a free demo so you can experience the teaching style before you join.</p>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>How do I get started?</summary>
+          <p>Message me on WhatsApp, call me or email me using the buttons below. Tell me your class and goal, and I'll book your free demo class.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -424,26 +489,52 @@
     <div class="container">
       <div class="cta-card reveal">
         <div class="cta-glow" aria-hidden="true"></div>
-        <p class="cta-kicker">Ready to start?</p>
-        <h2 class="cta-title">Let's make JEE Maths your<br>highest-scoring subject.</h2>
-        <p class="cta-sub">Book a free demo class, ask any question about your preparation, or just say hi. I reply to every message.</p>
 
-        <div class="cta-actions">
-          <a class="btn btn-white btn-whatsapp" href="https://wa.me/918299639445?text=I%20want%20to%20learn%20from%20you" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.33 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14 0-.31-.01-.48-.01-.16 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"></path></svg>
-            Chat on WhatsApp &mdash; "I want to learn from you"
-          </a>
-          <a class="btn btn-white" href="tel:+918299639445">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"></path></svg>
-            +91 82996 39445
-          </a>
-          <a class="btn btn-white btn-email" href="mailto:me.vinayyadav2002@gmail.com">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg>
-            me.vinayyadav2002@gmail.com
-          </a>
+        <div class="cta-info">
+          <p class="cta-kicker">Ready to start?</p>
+          <h2 class="cta-title">Let's make JEE Maths your<br>highest-scoring subject.</h2>
+          <p class="cta-sub">Book a free demo class, ask any question about your preparation, or just say hi. I reply to every message.</p>
+
+          <div class="cta-actions">
+            <a class="btn btn-white" href="tel:+918299639445">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"></path></svg>
+              +91 82996 39445
+            </a>
+            <a class="btn btn-white btn-email" href="mailto:me.vinayyadav2002@gmail.com">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg>
+              me.vinayyadav2002@gmail.com
+            </a>
+          </div>
+
+          <p class="cta-note">Based in Hyderabad &middot; Online maths tuition across India &middot; Offline classes in Hyderabad &middot; Open for coaching institute partnerships</p>
         </div>
 
-        <p class="cta-note">Based in Hyderabad &middot; Online maths tuition across India &middot; Offline classes in Hyderabad &middot; Open for coaching institute partnerships</p>
+        <form class="cta-form" onsubmit="return sendWhatsApp(this)">
+          <h3>Book your free demo class</h3>
+          <label>
+            Your name
+            <input type="text" name="name" placeholder="e.g. Rohan Sharma" required autocomplete="name">
+          </label>
+          <label>
+            Class
+            <select name="class" required>
+              <option value="" disabled selected>Select your class</option>
+              <option>Class 11</option>
+              <option>Class 12</option>
+              <option>Dropper / Repeater</option>
+              <option>Coaching institute</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>
+            Your question <span class="opt">(optional)</span>
+            <textarea name="msg" rows="2" placeholder="I want to learn JEE Maths from you..."></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.33 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.25 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43-.14 0-.31-.01-.48-.01-.16 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"></path></svg>
+            Send on WhatsApp
+          </button>
+        </form>
       </div>
     </div>
   </section>
@@ -470,9 +561,9 @@
       <h3>Quick Links</h3>
       <ul class="footer-links">
         <li><a href="#about">Teaching approach</a></li>
+        <li><a href="#demo">Demo class video</a></li>
         <li><a href="#subjects">Syllabus</a></li>
-        <li><a href="#results">Student results</a></li>
-        <li><a href="#videos">Demo videos</a></li>
+        <li><a href="#faq">Common questions</a></li>
       </ul>
     </div>
 
