@@ -109,6 +109,24 @@ const testimonials = {
     advice:
       "Vinay sir is one of the best doubt solvers I've seen — in fact, the best in our college. He has a good grip on all topics, so he'll explain everything in a very easy manner. The best part is that you can share anything with him; he's always ready to help, becomes a friend in need, and you can be completely open with him."
   },
+  bhargav: {
+    name: "Angothu Bhargav",
+    institute: "IIT Delhi · Mathematics and Computing (B.Tech)",
+    cred: ["Class of 2026", "JEE Advanced AIR 6678", "JEE Mains 13609"],
+    photo: "images/Bhargav.jfif",
+    quote:
+      "Your insights on complex problems were always unique and intuitive. Your explanations made tough concepts much simpler to grasp and ignited a genuine drive in me to solve more advanced questions. Whenever I reached out with doubts or struggled with difficult topics during my preparation at Sri Chaitanya, your guidance was invaluable and helped clear my foundational basics to tackle high-level JEE Advanced problems. I consider you a great mentor and friend who provided constant support throughout the two-year journey of highs and lows, always motivating me to perform my best and helping me reach IIT Delhi.",
+    advice: ""
+  },
+  karthikeya: {
+    name: "M. Krishna Karthikeya",
+    institute: "NIT Warangal · Electronics & Communication Engineering (B.Tech)",
+    cred: ["Class of 2026", "JEE Advanced AIR 8607", "JEE Mains 4774"],
+    photo: "images/krishna.png",
+    quote:
+      "Your insights on a problem were very unique and creative. It ignited an unknown thirst for solving more and more problems related to that topic. Whenever I talked with you about any subject, your guidance was invaluable and provided me with a lot of knowledge. I wasn't able to understand vectors and 3D geometry with a lot of clarity. When I reached out to you, your explanation provided a lot of clarity and helped me understand its basics and dive into the tougher problems. I would consider you a good friend who provides support during one's two-year journey of highs and lows and motivates you to perform your best.",
+    advice: ""
+  },
   chandra: {
     name: "Chandra Shekar",
     institute: "IIT BHU · Computer Science & Engineering",
@@ -173,6 +191,21 @@ document.querySelectorAll(".tt-card").forEach((card) => {
     openTestimonial(card.dataset.testimonial);
   });
 });
+
+/* ---------- Show more / show less testimonials ---------- */
+const moreBtn = document.getElementById("testimonial-more");
+const extraCards = document.querySelectorAll(".tt-card.is-extra");
+
+if (moreBtn && extraCards.length) {
+  moreBtn.addEventListener("click", () => {
+    const expanded = moreBtn.getAttribute("aria-expanded") === "true";
+    extraCards.forEach((card) => (card.hidden = expanded));
+    moreBtn.setAttribute("aria-expanded", String(!expanded));
+    moreBtn.innerHTML = expanded
+      ? 'Show more results<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>'
+      : 'Show less<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"></path></svg>';
+  });
+}
 
 modal.querySelectorAll("[data-close]").forEach((el) => {
   el.addEventListener("click", closeModal);

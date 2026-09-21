@@ -897,6 +897,22 @@ html.dark .hero-glow {
   color: #fff;
 }
 
+.tt-card[hidden] {
+  display: none;
+}
+
+.testimonial-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.testimonial-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 /* ---------------- Modal ---------------- */
 .modal {
   position: fixed;
