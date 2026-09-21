@@ -137,6 +137,38 @@
   }
   </script>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "@id": "https://www.vinayyadavmathematics.in/#org",
+    "name": "Vinay Yadav Mathematics",
+    "url": "https://www.vinayyadavmathematics.in/",
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Chandra Shekar" },
+        "reviewBody": "Sir helped us a lot — not only as a mentor giving study tips, but also as a friend who always wants to see us perform our best, with advice on exam patterns and how to handle the pressure of competitive exams. Approachable any time, he explains everything simply and helped me take on the toughest maths questions."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Mythreyan" },
+        "reviewBody": "Guided me like someone who had been through the same exam and knew the mistakes I would make. Gave emotional support as someone who understood what students feel, and helped me get over my all-or-nothing approach."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Aryaman" },
+        "reviewBody": "A mentor with concept-first teaching and 99.4 percentile results in JEE Mains. Recommended learning under him."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Arnav" },
+        "reviewBody": "One of the best doubt solvers, with a good grip on all topics. Explains in an easy manner and becomes a friend in need you can be completely open with."
+      }
+    ]
+  }
+  </script>
+
   <script>
     (function () {
       var t = localStorage.getItem("theme") || "dark";
@@ -218,7 +250,7 @@
 
       <div class="hero-photo reveal">
         <div class="photo-frame">
-          <img src="images/vinay-yadav.jpg" alt="Vinay Yadav — JEE mathematics teacher in Hyderabad" onerror="photoFallback(this)">
+          <img src="images/vinay-yadav.jpg" alt="Vinay Yadav — JEE mathematics teacher in Hyderabad" width="640" height="640" fetchpriority="high" decoding="async" onerror="photoFallback(this)">
         </div>
 
         <div class="float-chip chip-top">
@@ -253,8 +285,8 @@
         <span class="stat-label">Students in IITs &amp; NITs</span>
       </div>
       <div class="stat reveal">
-        <span class="stat-num"><span data-count="99.6">0</span></span>
-        <span class="stat-label">Best JEE Mains %ile</span>
+        <span class="stat-num"><span data-count="1">0</span></span>
+        <span class="stat-label">Student Under 1k Rank in JEE Advanced</span>
       </div>
     </div>
   </section>
@@ -315,7 +347,7 @@
 
       <div class="demo-video reveal">
         <div class="video-frame-cover" id="video-cover">
-          <img src="images/video-demo.png" alt="Demo class thumbnail — JEE Mathematics lesson">
+          <img src="images/video-demo.jpg" alt="Demo class thumbnail — JEE Mathematics lesson">
           <div class="video-cover-shade" aria-hidden="true"></div>
           <button class="video-play-btn" type="button" aria-label="Play demo class">
             <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M8 5v14l11-7Z"></path></svg>
@@ -389,13 +421,26 @@
       <div class="section-head reveal">
         <p class="section-kicker">Real Results</p>
         <h2 class="section-title">What my students say</h2>
-        <p class="section-sub">Two students, two journeys — and the honest words of what the classes felt like.</p>
+        <p class="section-sub">Students at IITs and NITs — and the honest words of what the classes felt like.</p>
       </div>
 
       <div class="testimonial-list">
+        <button type="button" class="tt-card reveal" data-testimonial="chandra">
+          <span class="tt-avatar">
+            <img src="images/Chandra.jpg" alt="Chandra Shekar" loading="lazy" onerror="avatarFallback(this, 'C')">
+          </span>
+          <span class="tt-body">
+            <span class="tt-name">Chandra Shekar</span>
+            <span class="tt-institute">IIT BHU &middot; Computer Science &amp; Engineering</span>
+            <span class="tt-meta">Class of 2026 &middot; JEE Advanced AIR 943</span>
+          </span>
+          <span class="tt-quote">"Approachable any time — he helped me take on the toughest maths questions."</span>
+          <span class="tt-chev" aria-hidden="true">&#8594;</span>
+        </button>
+
         <button type="button" class="tt-card reveal" data-testimonial="aryaman">
           <span class="tt-avatar">
-            <img src="images/Aryaman.png" alt="Aryaman" loading="lazy" onerror="avatarFallback(this, 'A')">
+            <img src="images/Aryaman.jpg" alt="Aryaman" loading="lazy" onerror="avatarFallback(this, 'A')">
           </span>
           <span class="tt-body">
             <span class="tt-name">Aryaman</span>
@@ -416,6 +461,19 @@
             <span class="tt-meta">JEE Mains (5080)</span>
           </span>
           <span class="tt-quote">"Your guidance became my main source of confidence."</span>
+          <span class="tt-chev" aria-hidden="true">&#8594;</span>
+        </button>
+
+        <button type="button" class="tt-card reveal" data-testimonial="arnav">
+          <span class="tt-avatar">
+            <img src="images/Arnav.jpg" alt="Arnav" loading="lazy" onerror="avatarFallback(this, 'A')">
+          </span>
+          <span class="tt-body">
+            <span class="tt-name">Arnav</span>
+            <span class="tt-institute">NIT Warangal &middot; B.Tech</span>
+            <span class="tt-meta">Class of 2026 &middot; JEE Mains ~41k CRL</span>
+          </span>
+          <span class="tt-quote">"One of the best doubt solvers — easy explanations and a friend in need."</span>
           <span class="tt-chev" aria-hidden="true">&#8594;</span>
         </button>
       </div>

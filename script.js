@@ -84,7 +84,7 @@ const testimonials = {
     name: "Aryaman",
     institute: "IIT Roorkee · Material Sciences (B.Tech)",
     cred: ["Class of 2026", "JEE Mains 99.4 %ile"],
-    photo: "images/Aryaman.png",
+    photo: "images/Aryaman.jpg",
     quote:
       "Sir helped me understand the most asked and important concepts with <em>logic-backed explanations instead of memorising formulae</em>, and taught us alternative methods to tackle exceptions along with quick ways to examine questions regarding graphs. He mentored me through all of 11th and 12th and was always open to answering every doubt. My favourite teaching &mdash; <em>&ldquo;whoever has stuck to the end and worked completely towards their goal for JEE Advanced has achieved it.&rdquo;</em> &mdash; stayed with me through the final months, and helped me avoid the most dreadful curse for many JEE students: losing momentum before the exam.",
     advice:
@@ -98,6 +98,26 @@ const testimonials = {
     quote:
       "Sir guided me like someone who had been through the same exam — a mentor who knew the mistakes I would make even before I made them. Instead of the usual motivation and scolding from faculty, he gave me emotional support as a person who genuinely understood what students feel. So many of his advices stuck with me that I can't pinpoint a single one. His guidance became my main source of confidence and helped me get over my all-or-nothing approach. I would definitely recommend learning under him.",
     advice: ""
+  },
+  arnav: {
+    name: "Arnav",
+    institute: "NIT Warangal · B.Tech",
+    cred: ["Class of 2026", "JEE Mains ~41k CRL"],
+    photo: "images/Arnav.jpg",
+    quote:
+      "Sir is the best doubt solver I know. Whenever our faculty rushed through small concepts, I would come to him and he would explain them in an easy-to-understand way. He made topics like conics — which are genuinely hard to grasp — feel simple, and he even explained how the Mains and Advanced exam structure works. This went on for the entire two years of intermediate; we even went out together and I shared a lot about my personal experiences. He truly became a friend in need.",
+    advice:
+      "Vinay sir is one of the best doubt solvers I've seen — in fact, the best in our college. He has a good grip on all topics, so he'll explain everything in a very easy manner. The best part is that you can share anything with him; he's always ready to help, becomes a friend in need, and you can be completely open with him."
+  },
+  chandra: {
+    name: "Chandra Shekar",
+    institute: "IIT BHU · Computer Science & Engineering",
+    cred: ["Class of 2026", "JEE Advanced AIR 943"],
+    photo: "images/Chandra.jpg",
+    quote:
+      "Sir helped us a lot — not only as a mentor giving study tips, but also as a friend who always wants to see us perform our best, with advice on exam patterns and how to handle the enormous pressure of competitive exams. He was almost a part of our peer group, but with far more experience of exam questions. The best part is the approachableness — you can go to him anytime, even when our lecturers were busy or unavailable. I still remember our discussion on conic-section properties and probability questions, where I learned how to actually look at a question while solving it. His help mattered a lot in maths, where I could discuss even the highest-level questions that most of my peers didn't dare to look at.",
+    advice:
+      "For any junior: Vinay sir is the maths mentor you want. Approachable any time, he explains everything simply, and above all he genuinely wants to see you perform your best. Thank you, sir."
   }
 };
 
